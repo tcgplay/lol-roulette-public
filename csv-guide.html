@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <title>コンセプトパーティー CSV の追加・編集手順</title>
   <style>
     :root {
@@ -109,13 +110,14 @@
     <pre>index.html              … ルーレット本体（TOP）
 csv-guide.html          … この手順ページ
 enabled-store.js        … 抽選 ON/OFF の保存（ローカルは CSV、Pages はブラウザ）
+robots.txt              … 検索クローラーへの収集拒否（従うボット向け）
 start.bat               … ローカルサーバー起動
 parties/
   config.csv            … 抽選対象の一覧と ON/OFF
   index.csv             … ファイル名の控え（任意）
   01_all_tanks.csv      … コンセプト1件につき1ファイル
   …</pre>
-    <p>抽選が実際に読むのは <code>parties/config.csv</code> と、そこに書かれたパーティー CSV です。GitHub Pages では同じファイルを HTTPS で配ります。一覧の切替は、ローカルなら <code>config.csv</code>、Pages ではそのブラウザの保存領域です。</p>
+    <p>抽選が実際に読むのは <code>parties/config.csv</code> と、そこに書かれたパーティー CSV です。GitHub Pages では同じファイルを HTTPS で配ります。一覧の切替は、ローカルなら <code>config.csv</code>、Pages ではそのブラウザの保存領域です。公開サイトは <code>robots.txt</code> と各ページの noindex で検索収集を拒否します。従わないボットまでは止められません。</p>
 
     <h2>2. 新しいコンセプトを追加する</h2>
     <ol>

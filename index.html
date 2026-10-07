@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <title>LoL コンセプトパーティー ルーレット</title>
   <style>
     :root {
@@ -296,6 +297,10 @@
 
       function $(id) { return document.getElementById(id); }
 
+      function escapeHtml(s) {
+        return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      }
+
       function parseCsvLine(line) {
         var out = [];
         var cur = "";
@@ -347,7 +352,7 @@
       }
 
       function champImg(key) {
-        return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/champion/" + key + ".png";
+        return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/champion/" + encodeURIComponent(key || "") + ".png";
       }
       function spellImg(id) {
         return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/spell/" + id + ".png";
@@ -372,8 +377,8 @@
 
       function iconCard(src, name) {
         return '<div class="icon-card">' +
-          '<img src="' + src + '" alt="' + name + '" width="40" height="40">' +
-          '<div class="n">' + name + "</div></div>";
+          '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(name) + '" width="40" height="40">' +
+          '<div class="n">' + escapeHtml(name) + "</div></div>";
       }
 
       function freeChoiceCard() {
@@ -383,8 +388,8 @@
       function renderParty(party, nameId, bodyId) {
         $(nameId).textContent = party.name;
         var html = "";
-        html += '<span class="label">コンセプト</span><p class="desc">' + party.concept + "</p>";
-        html += '<span class="label">運用</span><p class="play">' + party.playstyle + "</p>";
+        html += '<span class="label">コンセプト</span><p class="desc">' + escapeHtml(party.concept) + "</p>";
+        html += '<span class="label">運用</span><p class="play">' + escapeHtml(party.playstyle) + "</p>";
         var m;
         for (m = 0; m < party.members.length; m++) {
           var row = party.members[m];
@@ -397,9 +402,9 @@
             }
           }
           html += '<article class="member">';
-          html += '<img class="champ-icon" src="' + champImg(row.champion_key) + '" alt="' + row.champion_name + '">';
+          html += '<img class="champ-icon" src="' + escapeHtml(champImg(row.champion_key)) + '" alt="' + escapeHtml(row.champion_name) + '">';
           html += "<div>";
-          html += "<h3><span class=\"lane\">" + row.lane + "</span>" + row.champion_name + "</h3>";
+          html += "<h3><span class=\"lane\">" + escapeHtml(row.lane) + "</span>" + escapeHtml(row.champion_name) + "</h3>";
           html += '<span class="label">サモナースペル</span><div class="row">';
           if (row.spell1_id) { html += iconCard(spellImg(row.spell1_id), row.spell1_name); }
           if (row.spell2_id) { html += iconCard(spellImg(row.spell2_id), row.spell2_name); }

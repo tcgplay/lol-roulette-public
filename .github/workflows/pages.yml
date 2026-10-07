@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Assemble publish directory
+      - name: Assemble app-only publish directory
         run: |
           mkdir -p publish/parties
-          cp index.html party-list.html csv-guide.html license.html LICENSE start.bat start.ps1 enabled-store.js publish/
+          cp index.html party-list.html csv-guide.html license.html LICENSE start.bat start.ps1 enabled-store.js robots.txt publish/
           cp parties/*.csv publish/parties/
           touch publish/.nojekyll
       - uses: actions/configure-pages@v5
