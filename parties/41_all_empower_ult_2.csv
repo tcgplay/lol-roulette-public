@@ -1,0 +1,9 @@
+# name: ウルトを使うと強くなる 2
+# concept: ウルトの間だけ強くなる、別メンバーの編成です。強くなっている時間に合わせて全員で入ります。
+# playstyle: ドラゴンの前でウルトを揃えて入る。至極の賞金首狩りで、その時間を何度も作る。切れたら一度引く。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Renekton,レネクトン,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+ジャングル,Olaf,オラフ,SummonerSmite,スマイト,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+ミッド,Jax,ジャックス,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+ボット,Quinn,クィーン,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+サポート,Volibear,ボリベア,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,

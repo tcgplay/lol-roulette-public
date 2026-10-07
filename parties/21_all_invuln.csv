@@ -1,0 +1,9 @@
+# name: 全員無敵になる
+# concept: 無敵、対象指定不可、自分を止めるスキルで、ダメージを受けない時間を作るチャンピオンです。
+# playstyle: 無敵の時間を数えてからトレードする。攻撃チャンピオンはガーディアン エンジェル、魔力チャンピオンはゾーニャの砂時計で、その時間をアイテムでも足す。切れたら下がる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Tryndamere,トリンダメア,,,,,,,3026,ガーディアン エンジェル,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+ジャングル,Ekko,エコー,SummonerSmite,スマイト,,,3157,ゾーニャの砂時計,,,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+ミッド,Fizz,フィズ,,,,,3157,ゾーニャの砂時計,,,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+ボット,Kayle,ケイル,,,,,3157,ゾーニャの砂時計,,,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+サポート,Taric,タリック,,,,,3157,ゾーニャの砂時計,,,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,

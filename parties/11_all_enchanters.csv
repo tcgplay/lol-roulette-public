@@ -1,0 +1,9 @@
+# name: 全員シールドと回復
+# concept: シールド、回復、攻撃速度アップで味方を強くするエンチャンターです。自分からキルを取りに行かず、各レーンもバフ役に回ります。
+# playstyle: ヒールとムーンストーンの再生で味方の体力を維持する。キルより、味方を生かすことを優先する。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Lulu,ルル,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,3504,アーデント センサー,3107,リデンプション,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ジャングル,Ivern,アイバーン,SummonerSmite,スマイト,SummonerHeal,ヒール,6617,ムーンストーンの再生,3504,アーデント センサー,3107,リデンプション,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ミッド,Nami,ナミ,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,3504,アーデント センサー,3107,リデンプション,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ボット,Sona,ソナ,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,3504,アーデント センサー,3107,リデンプション,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+サポート,Milio,ミリオ,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,3504,アーデント センサー,3107,リデンプション,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,

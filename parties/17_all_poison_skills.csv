@@ -1,0 +1,9 @@
+# name: 毒の技が主武器
+# concept: 技の中心が毒そのものであるチャンピオンです。毒とは呼べない火傷や出血だけでは入れていません。
+# playstyle: 毒を当てたまま距離を保つ。魔力チャンピオンはライアンドリーの仮面とモレロノミコン、トゥイッチはルインドキング ブレードで毒の時間を活かす。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Singed,シンジド,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3165,モレロノミコン,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ジャングル,Teemo,ティーモ,SummonerSmite,スマイト,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3165,モレロノミコン,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ミッド,Cassiopeia,カシオペア,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3165,モレロノミコン,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ボット,Twitch,トゥイッチ,,,,,3153,ルインドキング ブレード,3124,グインソー レイジブレード,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png,レジェンド: 血脈,,,,,,,,
+サポート,Elise,エリス,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3165,モレロノミコン,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,

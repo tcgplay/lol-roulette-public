@@ -1,0 +1,9 @@
+# name: 全員自己回復が強い 3
+# concept: 自分のスキルで体力を戻すことが戦闘の中心になっている、別メンバーの編成です。
+# playstyle: 打ち合いを長引かせる。スピリット ビサージュで自己回復を厚くし、切られたら引いて、戻ってからもう一度殴る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Aatrox,エイトロックス,,,,,3065,スピリット ビサージュ,,,,,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,,,
+ジャングル,Volibear,ボリベア,SummonerSmite,スマイト,,,3065,スピリット ビサージュ,,,,,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,,,
+ミッド,Sylas,サイラス,,,,,3065,スピリット ビサージュ,,,,,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,,,
+ボット,Darius,ダリウス,,,,,3065,スピリット ビサージュ,,,,,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,,,
+サポート,Garen,ガレン,,,,,3065,スピリット ビサージュ,,,,,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,,,

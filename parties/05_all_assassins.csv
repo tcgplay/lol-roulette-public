@@ -1,0 +1,9 @@
+# name: 全員アサシン
+# concept: 短い時間に大ダメージを出して、後衛を狙い撃つアサシンです。1人倒したら次の対象へ移ります。
+# playstyle: 6レベル以降、視界の隙間から同時に入る。攻撃チャンピオンは妖夢の霊剣と赤月の刃、電撃で後衛を消す。外したら次のスキルまで下がる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Rengar,レンガー,SummonerDot,点火,,,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ジャングル,Khazix,カ＝ジックス,SummonerSmite,スマイト,SummonerDot,点火,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ミッド,Katarina,カタリーナ,SummonerDot,点火,,,,,,,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ボット,Twitch,トゥイッチ,SummonerDot,点火,,,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+サポート,Pyke,パイク,SummonerDot,点火,,,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,

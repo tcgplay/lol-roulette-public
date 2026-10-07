@@ -1,0 +1,9 @@
+# name: 紐で敵をつなぐ
+# concept: 敵と紐、鎖、ドリルでつながり、切れるまで効果が続くチャンピオンです。当たった瞬間に終わる束縛や、引っ張って終わりのフックは入れていません。
+# playstyle: 紐が切れない距離を保って最後まで当てる。ノクターンは恐怖、カルマとルブランは束縛、ヴァルスは連鎖する根、アーゴットは体力を削ってから引き込む。切れたら下がって次を待つ。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Urgot,アーゴット,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ジャングル,Nocturne,ノクターン,SummonerSmite,スマイト,,,,,,,,,,,,,,,,,,,,,,,,,,
+ミッド,Leblanc,ルブラン,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ボット,Varus,ヴァルス,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+サポート,Karma,カルマ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

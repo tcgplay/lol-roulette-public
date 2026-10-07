@@ -1,0 +1,9 @@
+# name: 全員ウェーブ処理が速い 2
+# concept: ウェーブ処理が速い、別メンバーの編成です。レーンを先に空にしてから集団戦に入ります。
+# playstyle: 同時にプッシュしてタワーに圧力をかける。集団戦の前に、必ずウェーブを処理してから動く。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Chogath,チョ＝ガス,,,,,,,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,,,
+ジャングル,Fiddlesticks,フィドルスティックス,SummonerSmite,スマイト,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,
+ミッド,Viktor,ビクター,,,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,
+ボット,Ziggs,ジグス,,,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,
+サポート,Zyra,ザイラ,,,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,

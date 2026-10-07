@@ -1,0 +1,9 @@
+# name: ウルトを使うと強くなる
+# concept: ウルトを使っている間だけ、姿や性能が大きく強くなるチャンピオンです。当たれば終わる単発のウルトや、常に姿が変わっているチャンピオンは入れていません。
+# playstyle: ウルトが揃ってから集団戦を始める。至極の賞金首狩りで、強くなっている時間を何度も使う。ウルトが切れたら一度下がる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Aatrox,エイトロックス,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+ジャングル,Shyvana,シヴァーナ,SummonerSmite,スマイト,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+ミッド,Swain,スウェイン,,,,,3158,アイオニア ブーツ,,,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+ボット,Vayne,ヴェイン,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,3053,ステラックの篭手,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,
+サポート,Alistar,アリスター,,,,,3158,アイオニア ブーツ,,,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,perk-images/Styles/Precision/Conqueror/Conqueror.png,征服者,,,,,,

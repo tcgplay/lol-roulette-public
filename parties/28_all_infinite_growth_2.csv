@@ -1,0 +1,9 @@
+# name: 時間が経つほど強くなる 2
+# concept: 時間やスタックで伸び続ける、別メンバーの編成です。ファームを許すほど後半が勝ちます。
+# playstyle: 序盤はスタックとレベルを優先する。心の鋼、ロッド オブ エイジス、グインソー レイジブレードと強まる嵐で、後半の差を作る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Sion,サイオン,,,,,3084,心の鋼,3070,女神の涙,,,,,,,,,perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png,不死者の握撃,perk-images/Styles/Resolve/Overgrowth/Overgrowth.png,超成長,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,
+ジャングル,Chogath,チョ＝ガス,SummonerSmite,スマイト,,,3084,心の鋼,3070,女神の涙,,,,,,,,,perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png,不死者の握撃,perk-images/Styles/Resolve/Overgrowth/Overgrowth.png,超成長,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,
+ミッド,AurelionSol,オレリオン・ソル,,,,,6657,ロッド オブ エイジス,3070,女神の涙,,,,,,,,,perk-images/Styles/Precision/PresenceOfMind/PresenceOfMind.png,冷静沈着,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,,,
+ボット,Kayle,ケイル,,,,,3124,グインソー レイジブレード,3115,ナッシャー トゥース,,,,,,,,,perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png,レジェンド: 血脈,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,,,
+サポート,Thresh,スレッシュ,,,,,3084,心の鋼,3070,女神の涙,,,,,,,,,perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png,不死者の握撃,perk-images/Styles/Resolve/Overgrowth/Overgrowth.png,超成長,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,

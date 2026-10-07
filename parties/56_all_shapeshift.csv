@@ -1,0 +1,9 @@
+# name: 戦闘中に姿が変わる
+# concept: 戦闘中に姿や武器を切り替えて、近接と遠距離で戦い方が変わるチャンピオンです。
+# playstyle: 遠い姿で様子を見てから、近い姿に切り替えて入る。ナーは大きくなってから、ジェイスはハンマーに持ち替えてから殴る。ウディアはスタンスを回し、エリスとニダリーは人の姿で削ってから獣の姿に入る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Gnar,ナー,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ジャングル,Udyr,ウディア,SummonerSmite,スマイト,,,,,,,,,,,,,,,,,,,,,,,,,,
+ミッド,Jayce,ジェイス,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ボット,Nidalee,ニダリー,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+サポート,Elise,エリス,,,,,,,,,,,,,,,,,,,,,,,,,,,,

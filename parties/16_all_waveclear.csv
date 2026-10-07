@@ -1,0 +1,9 @@
+# name: 全員ウェーブ処理が速い
+# concept: ウェーブとジャングルキャンプを特に速く処理できるチャンピオンです。単発のトレードより、レーンを先に空にします。
+# playstyle: ウェーブを先に消してからローミングする。魔力チャンピオンはルーデン エコー、シヴィアはスタティック シヴで範囲を広げる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Rumble,ランブル,,,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,
+ジャングル,Karthus,カーサス,SummonerSmite,スマイト,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,
+ミッド,Anivia,アニビア,,,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,
+ボット,Sivir,シヴィア,,,,,3087,スタティック シヴ,3094,ラピッド ファイアキャノン,,,,,,,,,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png,強まる嵐,,,,,,,,
+サポート,Brand,ブランド,,,,,6655,ルーデン エコー,6653,ライアンドリーの仮面,,,,,,,,,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png,英気集中,,,,,,,,

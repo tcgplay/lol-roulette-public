@@ -1,0 +1,65 @@
+# ルーレット抽選対象の設定
+# enabled: 1 = 抽選する / 0 = 抽選しない
+# パーティーCSVを追加したら、このファイルにも1行追加してください
+# コンセプトが近くても、他パーティーとのチャンピオン重複を避けるためにメンバーをずらす必要はない
+# 人選は「少しでも合う」ではなく、そのコンセプトの中心になるチャンピオンだけを入れる
+# スペル・アイテム・ルーンはコンセプトを成立させる核は指定する（例: 全員タンクなら心の鋼）。フルビルドや汎用フラッシュは埋めない。空欄は自由選択
+# アイテム列は購入順ではない。チャンピオンのAD/APに合わないアイテムは空欄。ルーン名は公式日本語名
+# ジャングルはキャンプを回せるチャンピオンだけ（ユーミなどは置かない）
+filename,enabled,memo
+01_all_tanks.csv,1,全員タンク
+02_infinite_growth.csv,1,時間が経つほど強くなる
+03_minion_spawn.csv,1,全員ミニオンを大量に出す
+04_global_ult.csv,1,全員どこからでもウルトが届く
+05_all_assassins.csv,1,全員アサシン
+06_all_stealth.csv,1,全員姿を消す
+07_all_poison.csv,1,毒でじわじわ削る
+08_all_long_range.csv,1,全員射程が長い
+09_all_turrets.csv,1,全員タレットを置く
+10_all_gapclose.csv,1,全員相手に飛びつく
+11_all_enchanters.csv,1,全員シールドと回復
+12_all_partners.csv,1,全員相棒を呼び出す
+13_all_clones.csv,1,全員分身を出す
+14_all_vision.csv,1,ワードを買わず視界を取る
+15_all_movespeed.csv,1,全員足が速い
+16_all_waveclear.csv,1,全員ウェーブ処理が速い
+17_all_poison_skills.csv,1,毒の技が主武器
+18_all_kill_stacks.csv,1,キルするほど強くなる
+19_all_tower_take.csv,1,全員タワーを速く壊す
+20_all_sustain.csv,1,全員自己回復が強い
+21_all_invuln.csv,1,全員無敵になる
+22_all_blink.csv,1,全員短距離をワープする
+23_all_traps.csv,1,全員罠を仕掛ける
+24_all_hooks.csv,1,全員フックで引っ張る
+25_all_empower_ult.csv,1,ウルトを使うと強くなる
+26_all_slow.csv,1,全員敵の足を止める
+27_all_tanks_2.csv,1,全員タンク 2
+28_all_infinite_growth_2.csv,1,時間が経つほど強くなる 2
+29_all_global_ult_2.csv,1,全員どこからでもウルトが届く 2
+30_all_assassins_2.csv,1,全員アサシン 2
+31_all_stealth_2.csv,1,全員姿を消す 2
+32_all_long_range_2.csv,1,全員射程が長い 2
+33_all_gapclose_2.csv,1,全員相手に飛びつく 2
+34_all_vision_2.csv,1,ワードを買わず視界を取る 2
+35_all_movespeed_2.csv,1,全員足が速い 2
+36_all_waveclear_2.csv,1,全員ウェーブ処理が速い 2
+37_all_tower_take_2.csv,1,全員タワーを速く壊す 2
+38_all_sustain_2.csv,1,全員自己回復が強い 2
+39_all_invuln_2.csv,1,全員無敵になる 2
+40_all_blink_2.csv,1,全員短距離をワープする 2
+41_all_empower_ult_2.csv,1,ウルトを使うと強くなる 2
+42_all_slow_2.csv,1,全員敵の足を止める 2
+43_all_short_cd.csv,1,全員スキルの回転が速い
+44_all_turrets_tentacle.csv,1,タレットと触手を置く
+45_all_long_ult.csv,1,ウルトがマップを横切る
+46_all_level_power.csv,1,レベルが上がると強くなる
+47_all_on_death.csv,1,倒れてもまだ動く
+48_all_counters.csv,1,攻撃を受けて返す
+49_all_tethers.csv,1,紐で敵をつなぐ
+50_all_enchanters_2.csv,1,全員シールドと回復 2
+51_all_tanks_3.csv,1,全員タンク 3
+52_all_assassins_3.csv,1,全員アサシン 3
+53_all_gapclose_3.csv,1,全員相手に飛びつく 3
+54_all_sustain_3.csv,1,全員自己回復が強い 3
+55_all_terrain.csv,1,全員壁を作る
+56_all_shapeshift.csv,1,戦闘中に姿が変わる

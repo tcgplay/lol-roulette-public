@@ -1,0 +1,9 @@
+# name: 全員相手に飛びつく 2
+# concept: 相手の位置へ飛びついて戦闘を始める、別メンバーの編成です。
+# playstyle: オブジェクトの前だけ飛び込む。当たってから殴り、外したら次のスキルまで引く。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Irelia,イレリア,,,,,3142,妖夢の霊剣,3742,デッド マン プレート,,,,,,,,,perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png,嵐乗りの勇躍,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ジャングル,LeeSin,リー・シン,SummonerSmite,スマイト,,,3142,妖夢の霊剣,3742,デッド マン プレート,,,,,,,,,perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png,嵐乗りの勇躍,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ミッド,Yasuo,ヤスオ,,,,,3142,妖夢の霊剣,3742,デッド マン プレート,,,,,,,,,perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png,嵐乗りの勇躍,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ボット,Samira,サミラ,,,,,3142,妖夢の霊剣,3742,デッド マン プレート,,,,,,,,,perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png,嵐乗りの勇躍,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+サポート,Rakan,ラカン,,,,,,,3742,デッド マン プレート,,,,,,,,,perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png,嵐乗りの勇躍,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,

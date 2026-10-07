@@ -1,0 +1,9 @@
+# name: キルするほど強くなる
+# concept: 敵チャンピオンを倒すと、スタックやステータスが永続で伸びるチャンピオンです。ミニオンを倒した分の成長は対象にしていません。
+# playstyle: 確実に倒せる相手だけを狙い、キルのたびに差を広げる。魔力のチョ＝ガスはメジャイ ソウルスティーラー、攻撃チャンピオンはヒュブリスとコレクターをキルで伸ばす。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Chogath,チョ＝ガス,,,,,3041,メジャイ ソウルスティーラー,,,,,,,,,,,perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png,魂の収穫,perk-images/Styles/Precision/Triumph.png,凱旋,,,,,,,,
+ジャングル,Belveth,ベル＝ヴェス,SummonerSmite,スマイト,,,,,6697,ヒュブリス,6676,コレクター,,,,,,,perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png,魂の収穫,perk-images/Styles/Precision/Triumph.png,凱旋,,,,,,,,
+ミッド,Jinx,ジンクス,,,,,,,6697,ヒュブリス,6676,コレクター,,,,,,,perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png,魂の収穫,perk-images/Styles/Precision/Triumph.png,凱旋,,,,,,,,
+ボット,Draven,ドレイヴン,,,,,,,6697,ヒュブリス,6676,コレクター,,,,,,,perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png,魂の収穫,perk-images/Styles/Precision/Triumph.png,凱旋,,,,,,,,
+サポート,Pyke,パイク,,,,,,,6697,ヒュブリス,6676,コレクター,,,,,,,perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png,魂の収穫,perk-images/Styles/Precision/Triumph.png,凱旋,,,,,,,,

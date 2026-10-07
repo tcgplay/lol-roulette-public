@@ -1,0 +1,9 @@
+# name: 全員敵の足を止める
+# concept: スキル自体で、相手の移動速度を大きく下げるチャンピオンです。アイテムのおまけの減速だけでは入れていません。
+# playstyle: 川とドラゴン前で減速を重ね、追う側の速度だけ有利にする。魔力チャンピオンはリーライ、アッシュはセリルダの怨恨、タンクはフローズン ハートを使う。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Nasus,ナサス,,,,,3110,フローズン ハート,,,,,,,,,,,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,,,,,,,,
+ジャングル,Nunu,ヌヌ＆ウィルランプ,SummonerSmite,スマイト,,,3116,リーライ クリスタル セプター,3110,フローズン ハート,,,,,,,,,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,,,,,,,,
+ミッド,Anivia,アニビア,,,,,3116,リーライ クリスタル セプター,,,,,,,,,,,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,,,,,,,,
+ボット,Ashe,アッシュ,,,,,6694,セリルダの怨恨,,,,,,,,,,,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,,,,,,,,
+サポート,Zilean,ジリアン,,,,,3116,リーライ クリスタル セプター,,,,,,,,,,,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,,,,,,,,

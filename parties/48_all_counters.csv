@@ -1,0 +1,9 @@
+# name: 攻撃を受けて返す
+# concept: 相手の攻撃や弾を受け流し、避け、防ぎ、跳ね返して罰するチャンピオンです。ダメージを受けないだけの無敵や、何も起きないスペルシールドだけでは入れていません。
+# playstyle: 相手が撃ってから合わせる。フィオラは妨害を受け流してスタン、ジャックスは通常攻撃を避けてスタン、メルは弾を反射、サミラとブラウムは飛び道具を消す。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Fiora,フィオラ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ジャングル,Jax,ジャックス,SummonerSmite,スマイト,,,,,,,,,,,,,,,,,,,,,,,,,,
+ミッド,Mel,メル,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ボット,Samira,サミラ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+サポート,Braum,ブラウム,,,,,,,,,,,,,,,,,,,,,,,,,,,,

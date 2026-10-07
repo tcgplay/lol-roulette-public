@@ -1,0 +1,9 @@
+# name: レベルが上がると強くなる
+# concept: レベルが上がると、通常攻撃やスキルの性能そのものが変わるチャンピオンです。ミニオンやキルのスタック、時間経過の成長は対象にしていません。
+# playstyle: 序盤は経験値を優先する。6、11、16で性能が変わってから集団戦をする。ケイルは形態、カ＝ジックスは進化、シンドラは破片、トリスターナは射程、カミールはQの真ダメージで後半に勝つ。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Camille,カミール,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ジャングル,Khazix,カ＝ジックス,SummonerSmite,スマイト,,,,,,,,,,,,,,,,,,,,,,,,,,
+ミッド,Kayle,ケイル,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ボット,Tristana,トリスターナ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+サポート,Syndra,シンドラ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

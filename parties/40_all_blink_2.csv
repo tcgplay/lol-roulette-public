@@ -1,0 +1,9 @@
+# name: 全員短距離をワープする 2
+# concept: 短い距離をワープする、別メンバーの編成です。走るダッシュではなく、瞬間的に位置を移します。
+# playstyle: 壁を越えて入ったら、次のワープが戻るまで深追いしない。ヘクステック ロケットベルトで、スキルのワープとは別に移動を1回足す。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Lissandra,リサンドラ,,,,,3152,ヘクステック ロケットベルト,3158,アイオニア ブーツ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,
+ジャングル,Shaco,シャコ,SummonerSmite,スマイト,,,3152,ヘクステック ロケットベルト,3158,アイオニア ブーツ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,
+ミッド,Zoe,ゾーイ,,,,,3152,ヘクステック ロケットベルト,3158,アイオニア ブーツ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,
+ボット,Ekko,エコー,,,,,3152,ヘクステック ロケットベルト,3158,アイオニア ブーツ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,
+サポート,Fiddlesticks,フィドルスティックス,,,,,3152,ヘクステック ロケットベルト,3158,アイオニア ブーツ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,

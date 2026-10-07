@@ -1,0 +1,9 @@
+# name: 全員どこからでもウルトが届く 2
+# concept: マップのどこにいても届くウルトを持つ、別メンバーの編成です。離れたレーンへ同時にウルトを飛ばします。
+# playstyle: ウルトのタイミングを合わせる。カーサスはマリグナンス、攻撃チャンピオンはヒュブリスとショウジンの矛で、次のウルトまでの時間を詰める。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Pantheon,パンテオン,,,,,3158,アイオニア ブーツ,6697,ヒュブリス,3161,ショウジンの矛,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ジャングル,Karthus,カーサス,SummonerSmite,スマイト,,,3158,アイオニア ブーツ,3118,マリグナンス,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ミッド,Galio,ガリオ,,,,,3158,アイオニア ブーツ,,,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ボット,Jinx,ジンクス,,,,,3158,アイオニア ブーツ,6697,ヒュブリス,3161,ショウジンの矛,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+サポート,Senna,セナ,,,,,3158,アイオニア ブーツ,6697,ヒュブリス,3161,ショウジンの矛,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,

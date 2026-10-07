@@ -1,0 +1,9 @@
+# name: 全員アサシン 3
+# concept: 短い時間に大ダメージを出して後衛を狙う、さらに別メンバーのアサシンです。
+# playstyle: オブジェクトの前は正面から入らない。タロンはサポートから、アクシャンはボットから、横のキャリーを狙う。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Fizz,フィズ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ジャングル,Kayn,ケイン,SummonerSmite,スマイト,,,,,,,,,,,,,,,,,,,,,,,,,,
+ミッド,Ekko,エコー,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ボット,Akshan,アクシャン,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+サポート,Talon,タロン,,,,,,,,,,,,,,,,,,,,,,,,,,,,

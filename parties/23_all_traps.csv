@@ -1,0 +1,9 @@
+# name: 全員罠を仕掛ける
+# concept: 地面に罠を置いて、踏んだ相手にダメージや拘束を出すチャンピオンです。タレットや、歩いてくる植物は入れていません。
+# playstyle: 茂みとレーンの途中に罠を先に敷く。魔力チャンピオンはライアンドリーの仮面、ケイトリンはラピッド ファイアキャノンで、踏ませたあとの一撃を厚くする。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Teemo,ティーモ,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Domination/DeepWard/DeepWard.png,ディープワード,,,,,,,,
+ジャングル,Nidalee,ニダリー,SummonerSmite,スマイト,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Domination/DeepWard/DeepWard.png,ディープワード,,,,,,,,
+ミッド,Ziggs,ジグス,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Domination/DeepWard/DeepWard.png,ディープワード,,,,,,,,
+ボット,Caitlyn,ケイトリン,,,,,3094,ラピッド ファイアキャノン,3179,アンブラル グレイブ,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Domination/DeepWard/DeepWard.png,ディープワード,,,,,,,,
+サポート,Shaco,シャコ,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Domination/DeepWard/DeepWard.png,ディープワード,,,,,,,,

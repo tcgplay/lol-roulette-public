@@ -1,0 +1,9 @@
+# name: 全員足が速い
+# concept: 元の移動速度が速く、ブーツやゴーストでもさらに速くするチャンピオンです。戦闘の前に位置を取り、終わったら次のレーンへ先に着きます。
+# playstyle: ゴーストとスイフトネス ブーツで先回りする。追い風で速度を上乗せし、回り込んだら長居しない。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Hecarim,ヘカリム,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,3142,妖夢の霊剣,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+ジャングル,MasterYi,マスター・イー,SummonerSmite,スマイト,SummonerHaste,ゴースト,3009,スイフトネス ブーツ,3142,妖夢の霊剣,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+サポート,Janna,ジャンナ,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,,,2065,シュレリアの戦歌,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+ミッド,Rammus,ラムス,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,,,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+ボット,Zeri,ゼリ,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,3142,妖夢の霊剣,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,

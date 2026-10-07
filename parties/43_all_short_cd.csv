@@ -1,0 +1,9 @@
+# name: 全員スキルの回転が速い
+# concept: スキルの再使用が元から短く、ヘイストを積むとさらに連打できるチャンピオンです。一撃のバーストより、スキルを打ち続けます。
+# playstyle: アイオニア ブーツと至高でスキルの間隔を詰める。一度下がって待たず、次のスキルが戻り次第もう一度当てる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Ryze,ライズ,,,,,3158,アイオニア ブーツ,4629,コズミック ドライブ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ジャングル,Hecarim,ヘカリム,SummonerSmite,スマイト,,,3158,アイオニア ブーツ,3161,ショウジンの矛,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ミッド,Kassadin,カッサディン,,,,,3158,アイオニア ブーツ,4629,コズミック ドライブ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ボット,Ezreal,エズリアル,,,,,3158,アイオニア ブーツ,3161,ショウジンの矛,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+サポート,Karma,カルマ,,,,,3158,アイオニア ブーツ,4629,コズミック ドライブ,,,,,,,,,perk-images/Styles/Sorcery/Transcendence/Transcendence.png,至高,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,

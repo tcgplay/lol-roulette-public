@@ -1,0 +1,9 @@
+# name: 全員無敵になる 2
+# concept: ダメージを受けない時間を作れる、別メンバーの編成です。相手の合わせを空振りさせます。
+# playstyle: 無敵の時間で相手のウルトを受け切る。攻撃チャンピオンはガーディアン エンジェル、魔力チャンピオンはゾーニャの砂時計をその時間に重ねる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Pantheon,パンテオン,,,,,,,3026,ガーディアン エンジェル,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+ジャングル,MasterYi,マスター・イー,SummonerSmite,スマイト,,,,,3026,ガーディアン エンジェル,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+ミッド,Vladimir,ブラッドミア,,,,,3157,ゾーニャの砂時計,,,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+ボット,Xayah,ザヤ,,,,,,,3026,ガーディアン エンジェル,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,
+サポート,Bard,バード,,,,,3157,ゾーニャの砂時計,,,,,,,,,,,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,,,,,,,,,,

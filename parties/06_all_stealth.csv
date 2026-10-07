@@ -1,0 +1,9 @@
+# name: 全員姿を消す
+# concept: 姿を消して位置を隠し、有利な角度から戦い始めるチャンピオンです。正面からのスキル交換はしません。
+# playstyle: ワードを踏まない道から近づく。見えている時間を短くし、姿を消した直後の一撃で削る。逃げるときもステルスを使う。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Qiyana,キヤナ,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+ジャングル,Evelynn,イブリン,SummonerSmite,スマイト,,,,,,,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+ミッド,Akali,アカリ,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+ボット,Vayne,ヴェイン,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+サポート,Talon,タロン,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,

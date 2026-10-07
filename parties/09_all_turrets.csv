@@ -1,0 +1,9 @@
+# name: 全員タレットを置く
+# concept: 自分でタレットを置いて攻撃させるチャンピオンです。踏む罠や、歩いてついてくるミニオンは入れていません。
+# playstyle: 序盤からタレットやボックスを置き、ライアンドリーの仮面とリーライで設置物のダメージを伸ばす。打ちこわしでタワーも押す。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Maokai,マオカイ,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Resolve/Demolish/Demolish.png,打ちこわし,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ジャングル,Shaco,シャコ,SummonerSmite,スマイト,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Resolve/Demolish/Demolish.png,打ちこわし,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ミッド,Heimerdinger,ハイマーディンガー,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Resolve/Demolish/Demolish.png,打ちこわし,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ボット,Teemo,ティーモ,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Resolve/Demolish/Demolish.png,打ちこわし,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+サポート,Zyra,ザイラ,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,,,,,,,,,perk-images/Styles/Resolve/Demolish/Demolish.png,打ちこわし,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,

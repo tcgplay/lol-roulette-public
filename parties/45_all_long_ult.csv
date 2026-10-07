@@ -1,0 +1,9 @@
+# name: ウルトがマップを横切る
+# concept: アッシュの矢やジンクスのロケットのように、マップを横切って飛ぶウルトを撃つチャンピオンです。テレポートや、マップ全体にダメージを出すウルトは入れていません。
+# playstyle: 別レーンの戦闘に、視界の端からウルトを通す。ジャングルはエズリアルがキャンプを処理し、コグ＝マウはミッドから撃つ。至極の賞金首狩りで次の一発を早め、コグ＝マウはマリグナンスでウルトの回転をさらに上げる。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Draven,ドレイヴン,,,,,3158,アイオニア ブーツ,6697,ヒュブリス,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ミッド,KogMaw,コグ＝マウ,,,,,3158,アイオニア ブーツ,3118,マリグナンス,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ジャングル,Ezreal,エズリアル,SummonerSmite,スマイト,,,3158,アイオニア ブーツ,6697,ヒュブリス,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+ボット,Jinx,ジンクス,,,,,3158,アイオニア ブーツ,6697,ヒュブリス,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,
+サポート,Ashe,アッシュ,,,,,3158,アイオニア ブーツ,6697,ヒュブリス,,,,,,,,,perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png,至極の賞金首狩り,perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png,宇宙の英知,perk-images/Styles/Precision/LegendHaste/LegendHaste.png,レジェンド: ヘイスト,,,,,,

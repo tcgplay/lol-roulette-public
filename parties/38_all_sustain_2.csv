@@ -1,0 +1,9 @@
+# name: 全員自己回復が強い 2
+# concept: 自分で体力を大きく戻せる、別メンバーの編成です。打ち合いを長引かせます。
+# playstyle: バーストを一度しのいで、体力が戻ってからもう一度入る。ファイターはデス ダンスとスピリット ビサージュ、ソナはムーンストーンの再生を使う。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,DrMundo,ドクター・ムンド,,,,,6333,デス ダンス,3065,スピリット ビサージュ,3083,ワーモグ アーマー,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png,血の味わい,perk-images/Styles/Resolve/SecondWind/SecondWind.png,息継ぎ,,,,,,
+ジャングル,Olaf,オラフ,SummonerSmite,スマイト,,,6333,デス ダンス,3065,スピリット ビサージュ,3083,ワーモグ アーマー,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png,血の味わい,perk-images/Styles/Resolve/SecondWind/SecondWind.png,息継ぎ,,,,,,
+ミッド,Swain,スウェイン,,,,,,,3065,スピリット ビサージュ,3083,ワーモグ アーマー,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png,血の味わい,perk-images/Styles/Resolve/SecondWind/SecondWind.png,息継ぎ,,,,,,
+ボット,Nilah,ナイラ,,,,,6333,デス ダンス,3065,スピリット ビサージュ,3083,ワーモグ アーマー,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png,血の味わい,perk-images/Styles/Resolve/SecondWind/SecondWind.png,息継ぎ,,,,,,
+サポート,Sona,ソナ,,,,,6617,ムーンストーンの再生,3107,リデンプション,3065,スピリット ビサージュ,,,,,,,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,,,,,,,,

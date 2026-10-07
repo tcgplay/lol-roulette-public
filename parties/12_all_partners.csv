@@ -1,0 +1,9 @@
+# name: 全員相棒を呼び出す
+# concept: メイデンやデイジーのように、一緒に戦う相棒を呼び出すチャンピオンです。本体と相棒の2体でレーンを押します。
+# playstyle: 相棒と一緒にウェーブを前に出す。本体が倒れると相棒も消えるので、本体を生き残らせて呼び直す。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Yorick,ヨリック,,,,,,,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ジャングル,Ivern,アイバーン,SummonerSmite,スマイト,,,3504,アーデント センサー,3050,ジーク コンバージェンス,3109,騎士の誓い,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ミッド,Annie,アニー,,,,,,,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ボット,Quinn,クィーン,,,,,,,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+サポート,Yuumi,ユーミ,,,,,3504,アーデント センサー,3050,ジーク コンバージェンス,3109,騎士の誓い,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,

@@ -1,0 +1,9 @@
+# name: 全員姿を消す 2
+# concept: 姿を消して位置を隠す、別メンバーの編成です。見えない時間で角度を作ります。
+# playstyle: 集団戦の開幕を遅らせ、相手がスキルを使ったあとに姿を現す。妖夢の霊剣とナイト エッジで、姿を見せた直後の一撃を厚くする。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,MonkeyKing,ウーコン,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+ジャングル,Shaco,シャコ,SummonerSmite,スマイト,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+ミッド,Rengar,レンガー,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+ボット,Twitch,トゥイッチ,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,
+サポート,Pyke,パイク,,,,,3142,妖夢の霊剣,3814,ナイト エッジ,,,,,,,,,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png,執拗な賞金首狩り,,,,,,,,

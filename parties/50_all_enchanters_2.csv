@@ -1,0 +1,9 @@
+# name: 全員シールドと回復 2
+# concept: シールドと回復で味方を伸ばす、別メンバーのエンチャンターです。ジャングルは、キャンプを回せるアイバーンが担当します。
+# playstyle: 自分からキルを取りに行かない。ヒールとムーンストーンの再生で味方を生かし、オブジェクトはアイバーンのスマイトで取る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Soraka,ソラカ,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ジャングル,Ivern,アイバーン,SummonerSmite,スマイト,SummonerHeal,ヒール,6617,ムーンストーンの再生,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ミッド,Seraphine,セラフィーン,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+ボット,Renata,レナータ・グラスク,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,
+サポート,Janna,ジャンナ,SummonerHeal,ヒール,,,6617,ムーンストーンの再生,,,,,,,,,,,perk-images/Styles/Resolve/FontOfLife/FontOfLife.png,生命の泉,perk-images/Styles/Resolve/Revitalize/Revitalize.png,生気付与,,,,,,,,

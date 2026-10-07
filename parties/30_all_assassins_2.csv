@@ -1,0 +1,9 @@
+# name: 全員アサシン 2
+# concept: 短い時間に大ダメージを出して後衛を狙う、別メンバーのアサシンです。
+# playstyle: オブジェクトの前は正面から入らない。横からキャリーを倒して、人数を揃えてからオブジェクトを取る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Qiyana,キヤナ,SummonerDot,点火,,,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ジャングル,Evelynn,イブリン,SummonerSmite,スマイト,SummonerDot,点火,,,,,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ミッド,Zed,ゼド,SummonerDot,点火,,,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+ボット,Akali,アカリ,SummonerDot,点火,,,3142,妖夢の霊剣,6692,赤月の刃,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,
+サポート,Leblanc,ルブラン,SummonerDot,点火,,,,,,,,,,,,,,,perk-images/Styles/Domination/Electrocute/Electrocute.png,電撃,perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png,サドンインパクト,,,,,,,,

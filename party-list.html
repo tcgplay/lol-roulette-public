@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>コンセプトパーティー一覧</title>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --panel: #141923;
+      --panel-2: #1b2230;
+      --gold: #c8aa6e;
+      --gold-2: #f0e6d2;
+      --muted: #9aa4b5;
+      --line: #2b3344;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(1200px 600px at 50% -10%, #1a2438 0%, var(--bg) 55%);
+      color: var(--gold-2);
+      font-family: "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
+    }
+    body { padding: 24px 16px 48px; }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    nav { margin-bottom: 20px; font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+    a { color: var(--gold); }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+    }
+    .sub { color: var(--muted); margin: 0 0 8px; font-size: 14px; line-height: 1.6; }
+    .status { color: var(--muted); font-size: 14px; min-height: 1.4em; margin: 0 0 20px; }
+    .status.error { color: #ff8b8b; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      margin-bottom: 14px;
+    }
+    .card.off { opacity: 0.55; }
+    .card-head {
+      padding: 12px 16px;
+      background: var(--panel-2);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+    }
+    .card-head h2 {
+      margin: 0;
+      font-size: 18px;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .badge {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      border: 1px solid var(--line);
+      padding: 2px 8px;
+      color: var(--muted);
+    }
+    .badge.on {
+      border-color: #0ac8b9;
+      color: #0ac8b9;
+    }
+    .toggle {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--gold-2);
+      cursor: pointer;
+      user-select: none;
+    }
+    .toggle input {
+      width: 16px;
+      height: 16px;
+      accent-color: #0ac8b9;
+    }
+    .toggle.busy { opacity: 0.6; pointer-events: none; }
+    .file {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: Consolas, "Courier New", monospace;
+    }
+    .card-body { padding: 12px 16px 16px; }
+    .desc {
+      margin: 0 0 10px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #d7dce6;
+    }
+    .label {
+      display: block;
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      margin-bottom: 4px;
+    }
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .member {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 160px;
+    }
+    .member img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border: 1px solid var(--gold);
+      background: #000;
+    }
+    .lane {
+      display: block;
+      font-size: 10px;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+    }
+    .champ { font-size: 13px; }
+    .legal-notice {
+      margin: 96px auto 0;
+      padding: 20px 0 0;
+      border-top: 1px solid #3a4558;
+      color: #5a6578;
+      font-size: 10px;
+      line-height: 1.65;
+    }
+    .legal-notice .legal-kicker {
+      display: block;
+      margin-bottom: 8px;
+      color: #4a5568;
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .legal-notice p { margin: 0 0 8px; color: #5a6578; font-size: 10px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">← ルーレット（TOP）へ戻る</a>
+      <a href="csv-guide.html">CSV の追加・編集手順</a>
+      <a href="license.html">ライセンス（MIT）</a>
+    </nav>
+    <h1>パーティー一覧</h1>
+    <p class="sub">各パーティーの「抽選する」でルーレット対象を切り替えます。<span id="saveHint">保存先は起動方法によって変わります。</span>ルーレットを動かすには抽選ONが2件以上必要です。</p>
+    <p class="status" id="status">読み込み中です。</p>
+    <div id="list"></div>
+    <aside class="legal-notice" aria-label="Legal notice">
+      <span class="legal-kicker">Legal notice — not part of the app</span>
+      <p>コンセプトパーティー ルーレット isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+      <p>チャンピオン画像は Riot Games 公式 Data Dragon から取得しています。</p>
+    </aside>
+  </div>
+  <script src="enabled-store.js"></script>
+  <script>
+    (function () {
+      var DDRAGON_BASE = "https://ddragon.leagueoflegends.com";
+      var patchVersion = "16.19.1";
+
+      function $(id) { return document.getElementById(id); }
+
+      function escapeHtml(s) {
+        return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      }
+
+      function parseCsvLine(line) {
+        var out = [];
+        var cur = "";
+        var i;
+        var inQuotes = false;
+        for (i = 0; i < line.length; i++) {
+          var ch = line.charAt(i);
+          if (inQuotes) {
+            if (ch === '"') {
+              if (line.charAt(i + 1) === '"') { cur += '"'; i++; }
+              else { inQuotes = false; }
+            } else { cur += ch; }
+          } else if (ch === '"') { inQuotes = true; }
+          else if (ch === ",") { out.push(cur); cur = ""; }
+          else { cur += ch; }
+        }
+        out.push(cur);
+        return out;
+      }
+
+      function parsePartyCsv(text, filename) {
+        var lines = text.replace(/^\uFEFF/, "").split(/\r?\n/);
+        var meta = { name: filename, concept: "", playstyle: "", file: filename };
+        var headers = null;
+        var members = [];
+        var i;
+        for (i = 0; i < lines.length; i++) {
+          var raw = lines[i];
+          if (!raw || !raw.replace(/\s/g, "")) { continue; }
+          if (raw.charAt(0) === "#") {
+            var body = raw.replace(/^#\s*/, "");
+            var colon = body.indexOf(":");
+            if (colon > 0) {
+              meta[body.slice(0, colon).trim()] = body.slice(colon + 1).trim();
+            }
+            continue;
+          }
+          var cols = parseCsvLine(raw);
+          if (!headers) { headers = cols; continue; }
+          var row = {};
+          var h;
+          for (h = 0; h < headers.length; h++) { row[headers[h]] = cols[h] || ""; }
+          members.push(row);
+        }
+        meta.members = members;
+        return meta;
+      }
+
+      function parseConfigCsv(text) {
+        var lines = text.replace(/^\uFEFF/, "").split(/\r?\n/);
+        var headers = null;
+        var rows = [];
+        var i;
+        for (i = 0; i < lines.length; i++) {
+          var raw = lines[i];
+          if (!raw || !raw.replace(/\s/g, "") || raw.charAt(0) === "#") { continue; }
+          var cols = parseCsvLine(raw);
+          if (!headers) { headers = cols; continue; }
+          var row = {};
+          var h;
+          for (h = 0; h < headers.length; h++) { row[headers[h]] = cols[h] || ""; }
+          if (row.filename) { rows.push(row); }
+        }
+        return rows;
+      }
+
+      function isEnabledValue(raw) {
+        var v = String(raw || "").trim().toLowerCase();
+        return v === "1" || v === "true" || v === "yes" || v === "on" || v === "y";
+      }
+
+      function champImg(key) {
+        return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/champion/" + encodeURIComponent(key || "") + ".png";
+      }
+
+      function fetchTimeout(url, ms) {
+        var ctrl = typeof AbortController === "function" ? new AbortController() : null;
+        var timer = setTimeout(function () {
+          if (ctrl) { ctrl.abort(); }
+        }, ms);
+        var opts = ctrl ? { signal: ctrl.signal } : {};
+        return fetch(url, opts).then(function (res) {
+          clearTimeout(timer);
+          return res;
+        }, function (err) {
+          clearTimeout(timer);
+          throw err;
+        });
+      }
+
+      function isSafePartyFile(name) {
+        return /^[A-Za-z0-9_.-]+\.csv$/.test(name);
+      }
+
+      function setStatus(entriesLength, enabledCount) {
+        var warn = "";
+        if (enabledCount < 2) { warn = " 抽選ONが2件未満のため、ルーレットは開始できません。"; }
+        $("status").className = enabledCount < 2 ? "status error" : "status";
+        $("status").textContent = "全 " + entriesLength + " 件 / 抽選ON " + enabledCount + " 件。パッチ " + patchVersion + " の画像を使用します。" + warn;
+      }
+
+      function countEnabledFromDom() {
+        return $("list").querySelectorAll('input[data-role="enabled"]:checked').length;
+      }
+
+      function applyCardState(card, on) {
+        if (!card) { return; }
+        if (on) { card.classList.remove("off"); }
+        else { card.classList.add("off"); }
+        var badge = card.querySelector(".badge");
+        if (badge) {
+          badge.textContent = on ? "抽選ON" : "抽選OFF";
+          badge.className = "badge" + (on ? " on" : "");
+        }
+      }
+
+      function render(entries) {
+        var html = "";
+        var i;
+        for (i = 0; i < entries.length; i++) {
+          var item = entries[i];
+          var party = item.party;
+          var on = item.enabled;
+          html += '<article class="card' + (on ? "" : " off") + '" data-file="' + escapeHtml(party.file) + '">';
+          html += '<div class="card-head">';
+          html += "<h2>" + escapeHtml(party.name) + "</h2>";
+          html += '<span class="badge' + (on ? " on" : "") + '">' + (on ? "抽選ON" : "抽選OFF") + "</span>";
+          html += '<span class="file">' + escapeHtml(party.file) + "</span>";
+          html += '<label class="toggle"><input type="checkbox" data-role="enabled" data-filename="' + escapeHtml(party.file) + '"' + (on ? " checked" : "") + ">抽選する</label>";
+          html += "</div><div class=\"card-body\">";
+          if (party.concept) {
+            html += '<span class="label">コンセプト</span><p class="desc">' + escapeHtml(party.concept) + "</p>";
+          }
+          html += '<span class="label">メンバー</span><div class="members">';
+          var members = party.members || [];
+          var m;
+          for (m = 0; m < members.length; m++) {
+            var row = members[m];
+            html += '<div class="member">';
+            html += '<img src="' + escapeHtml(champImg(row.champion_key)) + '" alt="' + escapeHtml(row.champion_name) + '" width="40" height="40">';
+            html += "<div><span class=\"lane\">" + escapeHtml(row.lane) + "</span>";
+            html += '<span class="champ">' + escapeHtml(row.champion_name) + "</span></div></div>";
+          }
+          html += "</div></div></article>";
+        }
+        $("list").innerHTML = html;
+      }
+
+      async function loadPatchVersion() {
+        try {
+          var verRes = await fetchTimeout(DDRAGON_BASE + "/api/versions.json", 2500);
+          if (!verRes.ok) { return; }
+          var vers = await verRes.json();
+          if (vers && vers[0]) { patchVersion = vers[0]; }
+        } catch (e) { /* 画像パッチが取れなくても一覧は出す */ }
+      }
+
+      async function loadData() {
+        var patchTask = loadPatchVersion();
+        var configRes = await fetchTimeout("parties/config.csv", 8000);
+        if (!configRes.ok) { throw new Error("parties/config.csv を読めませんでした"); }
+        var configRows = parseConfigCsv(await configRes.text());
+        if (window.LolEnabledStore) { window.LolEnabledStore.applyToRows(configRows); }
+        if (!configRows.length) { throw new Error("parties/config.csv にパーティーがありません"); }
+
+        var entries = [];
+        var enabledCount = 0;
+        var problems = [];
+        var i;
+        for (i = 0; i < configRows.length; i++) {
+          var filename = configRows[i].filename.trim();
+          var on = isEnabledValue(configRows[i].enabled);
+          $("status").className = "status";
+          $("status").textContent = "読み込み中 " + (i + 1) + " / " + configRows.length + " …";
+          var party = null;
+          if (!isSafePartyFile(filename)) {
+            problems.push(filename || "(空のファイル名)");
+          } else {
+            try {
+              var res = await fetchTimeout("parties/" + encodeURIComponent(filename), 8000);
+              if (!res.ok) { throw new Error("HTTP " + res.status); }
+              party = parsePartyCsv(await res.text(), filename);
+            } catch (e) {
+              problems.push(filename);
+            }
+          }
+          if (!party) {
+            party = {
+              name: filename || "(無名)",
+              concept: "このCSVは読めませんでした。他のパーティーは表示しています。",
+              playstyle: "",
+              file: filename || "(無名)",
+              members: []
+            };
+          }
+          if (on) { enabledCount += 1; }
+          entries.push({ party: party, enabled: on });
+        }
+        await patchTask;
+        partyTotal = entries.length;
+        var warn = "";
+        if (problems.length) {
+          warn = " 読めなかったCSVが " + problems.length + " 件あります。読めたパーティーは表示しています。";
+        }
+        render(entries);
+        setStatus(partyTotal, enabledCount);
+        if (warn) {
+          $("status").className = "status error";
+          $("status").textContent = $("status").textContent + warn;
+        }
+      }
+
+      var partyTotal = 0;
+      var hintEl = $("saveHint");
+      if (hintEl && window.LolEnabledStore) {
+        hintEl.textContent = window.LolEnabledStore.saveHint();
+      }
+
+      $("list").addEventListener("change", function (ev) {
+        var input = ev.target;
+        if (!input || input.getAttribute("data-role") !== "enabled") { return; }
+        var filename = input.getAttribute("data-filename");
+        var wantOn = input.checked;
+        var card = input.closest(".card");
+        var label = input.closest(".toggle");
+        if (label) { label.classList.add("busy"); }
+        var saver = window.LolEnabledStore && window.LolEnabledStore.saveEnabled
+          ? window.LolEnabledStore.saveEnabled(filename, wantOn)
+          : Promise.reject(new Error("enabled-store.js が読めません"));
+        saver.then(function () {
+          applyCardState(card, wantOn);
+          setStatus(partyTotal, countEnabledFromDom());
+        }).catch(function (err) {
+          input.checked = !wantOn;
+          applyCardState(card, !wantOn);
+          $("status").className = "status error";
+          $("status").textContent = "抽選設定を保存できませんでした。(" + err.message + ")";
+        }).then(function () {
+          if (label) { label.classList.remove("busy"); }
+        });
+      });
+
+      loadData().catch(function (err) {
+        $("status").className = "status error";
+        $("status").textContent = "読み込みに失敗しました。GitHub Pages のサイトを開くか、start.bat でローカルサーバーを起動してください。(" + err.message + ")";
+        $("list").innerHTML = '<p class="desc">' + escapeHtml(err.message) + "</p>";
+      });
+    })();
+  </script>
+</body>
+</html>

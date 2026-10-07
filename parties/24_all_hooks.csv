@@ -1,0 +1,9 @@
+# name: 全員フックで引っ張る
+# concept: スキルショットのフックで、相手を自分の方へ引っ張るチャンピオンです。吹き飛ばしやダッシュは入れていません。
+# playstyle: フラッシュとフックを同時に撃って、引っ張った相手を全員で叩く。疾駆で、当たったあとの距離を詰める。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Kled,クレッド,SummonerFlash,フラッシュ,,,3742,デッド マン プレート,,,,,,,,,,,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,,,,,,,,
+ジャングル,Nautilus,ノーチラス,SummonerSmite,スマイト,SummonerFlash,フラッシュ,3742,デッド マン プレート,2065,シュレリアの戦歌,,,,,,,,,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,,,,,,,,
+ミッド,Pyke,パイク,SummonerFlash,フラッシュ,,,3742,デッド マン プレート,,,,,,,,,,,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,,,,,,,,
+ボット,Thresh,スレッシュ,SummonerFlash,フラッシュ,,,3742,デッド マン プレート,2065,シュレリアの戦歌,,,,,,,,,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,,,,,,,,
+サポート,Blitzcrank,ブリッツクランク,SummonerFlash,フラッシュ,,,3742,デッド マン プレート,2065,シュレリアの戦歌,,,,,,,,,perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png,グレイシャルオーグメント,perk-images/Styles/Inspiration/ApproachVelocity/ApproachVelocity.png,疾駆,,,,,,,,

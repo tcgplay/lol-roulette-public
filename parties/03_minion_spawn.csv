@@ -1,0 +1,9 @@
+# name: 全員ミニオンを大量に出す
+# concept: タレットではなく、歩いて戦うミニオンを大量に出すチャンピオンです。グール、蜘蛛、砂兵、ヴォイドリングで数を押し出します。
+# playstyle: 出したユニットでウェーブを前に出す。魔力で戦うチャンピオンはライアンドリーの仮面とリーライでユニットのダメージを伸ばす。本体は後ろから指示する。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Yorick,ヨリック,,,,,,,,,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ジャングル,Elise,エリス,SummonerSmite,スマイト,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3118,マリグナンス,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ミッド,Azir,アジール,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3118,マリグナンス,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+ボット,Malzahar,マルザハール,,,,,6653,ライアンドリーの仮面,3116,リーライ クリスタル セプター,3118,マリグナンス,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,
+サポート,Naafiri,ナーフィリ,,,,,,,,,,,,,,,,,perk-images/Styles/Domination/CheapShot/CheapShot.png,追い打ち,perk-images/Styles/Sorcery/Scorch/Scorch.png,追火,,,,,,,,

@@ -1,0 +1,9 @@
+# name: 全員足が速い 2
+# concept: 移動速度が速い、別メンバーの編成です。先に位置を取って、戦闘が終わったら次のレーンへ先に着きます。
+# playstyle: ゴーストとスイフトネス ブーツで先回りする。サポートはシュレリアの戦歌も使い、速度が落ちる前に次の目的地へ移る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Singed,シンジド,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,,,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+ジャングル,Lillia,リリア,SummonerSmite,スマイト,SummonerHaste,ゴースト,3009,スイフトネス ブーツ,,,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+ミッド,Zilean,ジリアン,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,,,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+ボット,Sivir,シヴィア,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,3142,妖夢の霊剣,,,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,
+サポート,Rakan,ラカン,SummonerHaste,ゴースト,,,3009,スイフトネス ブーツ,,,2065,シュレリアの戦歌,,,,,,,perk-images/Styles/Sorcery/Celerity/CelerityTemp.png,追い風,perk-images/Styles/Sorcery/NimbusCloak/6361.png,ニンバスクローク,,,,,,,,

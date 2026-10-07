@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoL コンセプトパーティー ルーレット</title>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --panel: #141923;
+      --panel-2: #1b2230;
+      --gold: #c8aa6e;
+      --gold-2: #f0e6d2;
+      --blue: #0ac8b9;
+      --red: #c84b4b;
+      --muted: #9aa4b5;
+      --line: #2b3344;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(1200px 600px at 50% -10%, #1a2438 0%, var(--bg) 55%);
+      color: var(--gold-2);
+      font-family: "Segoe UI", "Hiragino Sans", "Yu Gothic UI", Meiryo, sans-serif;
+      min-height: 100%;
+    }
+    body { padding: 24px 16px 48px; }
+    header {
+      max-width: 1280px;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .controls {
+      max-width: 1280px;
+      margin: 0 auto 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      appearance: none;
+      border: 1px solid var(--gold);
+      background: linear-gradient(#3b3324, #1d1a14);
+      color: var(--gold-2);
+      padding: 10px 22px;
+      font-size: 15px;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    button:hover { filter: brightness(1.12); }
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      filter: none;
+    }
+    #draw1Btn { border-color: var(--blue); }
+    #draw2Btn { border-color: var(--red); }
+    .reel {
+      min-width: 280px;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      background: #0e121a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--gold);
+      padding: 8px 16px;
+    }
+    .status {
+      max-width: 1280px;
+      margin: 0 auto 16px;
+      text-align: center;
+      color: var(--muted);
+      min-height: 1.4em;
+      font-size: 14px;
+    }
+    .status.error { color: #ff8b8b; }
+    .boards {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 980px) {
+      .boards { grid-template-columns: 1fr; }
+    }
+    .board {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      min-height: 240px;
+    }
+    .board.blue { border-top: 4px solid var(--blue); }
+    .board.red { border-top: 4px solid var(--red); }
+    .board-head {
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel-2);
+    }
+    .side-label {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      margin-bottom: 4px;
+    }
+    .board.blue .side-label { color: var(--blue); }
+    .board.red .side-label { color: var(--red); }
+    .party-name {
+      margin: 0;
+      font-size: 22px;
+      color: var(--gold);
+    }
+    .board-body { padding: 14px 16px 18px; }
+    .desc, .play {
+      margin: 0 0 12px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #d7dce6;
+    }
+    .label {
+      display: block;
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      margin-bottom: 4px;
+    }
+    .placeholder {
+      color: var(--muted);
+      padding: 48px 16px;
+      text-align: center;
+    }
+    .member {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+    .champ-icon {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      border: 1px solid var(--gold);
+      background: #000;
+    }
+    .member h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .lane {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      margin-right: 6px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      vertical-align: middle;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: flex-end;
+      margin: 8px 0 0;
+    }
+    .icon-card {
+      width: 54px;
+      text-align: center;
+    }
+    .icon-card img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border: 1px solid #3a4356;
+      background: #000;
+      display: block;
+      margin: 0 auto 4px;
+    }
+    .icon-card .n {
+      font-size: 10px;
+      color: var(--muted);
+      line-height: 1.3;
+      word-break: break-all;
+    }
+    .icon-card.free {
+      width: auto;
+      min-width: 72px;
+      padding: 10px 8px;
+      border: 1px dashed #3a4356;
+    }
+    .icon-card.free .n { font-size: 12px; }
+    .nav-links {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .nav-link {
+      color: var(--gold);
+      font-size: 14px;
+    }
+    code { color: var(--gold); }
+    .legal-notice {
+      max-width: 720px;
+      margin: 96px auto 0;
+      padding: 20px 16px 0;
+      border-top: 1px solid #3a4558;
+      color: #5a6578;
+      font-size: 10px;
+      line-height: 1.65;
+      text-align: left;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    .legal-notice .legal-kicker {
+      display: block;
+      margin-bottom: 8px;
+      color: #4a5568;
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .legal-notice p { margin: 0 0 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>コンセプトパーティー ルーレット</h1>
+    <p class="sub">サモナーズリフト カスタム 5対5向け。先にパーティー1を回し、そのチャンピオン名を含むコンセプトはパーティー2から除外します。パーティー2は別のボタンで回し、パーティー1を残したまま引き直せます。編成内容の差し替えは行いません。抽選対象のON/OFFは <a href="party-list.html">パーティー一覧</a> で切り替えます。GitHub Pages 上の切替はこのブラウザにだけ残ります。</p>
+    <div class="nav-links">
+      <a class="nav-link" href="party-list.html">パーティー一覧</a>
+      <a class="nav-link" href="csv-guide.html">コンセプトパーティー CSV の追加・編集手順</a>
+      <a class="nav-link" href="license.html">ライセンス（MIT）</a>
+    </div>
+  </header>
+
+  <div class="controls">
+    <button type="button" id="draw1Btn">パーティー1を回す</button>
+    <button type="button" id="draw2Btn" disabled>パーティー2を回す</button>
+    <button type="button" id="resetBtn">リセット</button>
+    <div class="reel" id="reel">READY</div>
+  </div>
+  <p class="status" id="status">CSVを読み込み中です。</p>
+
+  <div class="boards">
+    <section class="board blue" id="board1">
+      <div class="board-head">
+        <div class="side-label">パーティー 1 / ブルーサイド</div>
+        <h2 class="party-name" id="name1">未抽選</h2>
+      </div>
+      <div class="board-body" id="body1"><p class="placeholder">抽選待ち</p></div>
+    </section>
+    <section class="board red" id="board2">
+      <div class="board-head">
+        <div class="side-label">パーティー 2 / レッドサイド</div>
+        <h2 class="party-name" id="name2">未抽選</h2>
+      </div>
+      <div class="board-body" id="body2"><p class="placeholder">パーティー1の抽選後、重複チャンピオンを除いて抽選します</p></div>
+    </section>
+  </div>
+
+  <aside class="legal-notice" aria-label="Legal notice">
+    <span class="legal-kicker">Legal notice — not part of the app</span>
+    <p>コンセプトパーティー ルーレット isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+    <p>チャンピオン・アイテム・ルーン・サモナースペルの画像は Riot Games 公式 Data Dragon から取得しています。カスタムゲームでの私的利用を想定した非公式ファンメイドです。</p>
+  </aside>
+
+  <script src="enabled-store.js"></script>
+  <script>
+    (function () {
+      var DDRAGON_BASE = "https://ddragon.leagueoflegends.com";
+      var patchVersion = "16.19.1";
+      var parties = [];
+      var partyTotal = 0;
+      var drawing = false;
+      var lockedParty1 = null;
+      var party2Drawn = false;
+
+      function $(id) { return document.getElementById(id); }
+
+      function parseCsvLine(line) {
+        var out = [];
+        var cur = "";
+        var i;
+        var inQuotes = false;
+        for (i = 0; i < line.length; i++) {
+          var ch = line.charAt(i);
+          if (inQuotes) {
+            if (ch === '"') {
+              if (line.charAt(i + 1) === '"') { cur += '"'; i++; }
+              else { inQuotes = false; }
+            } else { cur += ch; }
+          } else if (ch === '"') { inQuotes = true; }
+          else if (ch === ",") { out.push(cur); cur = ""; }
+          else { cur += ch; }
+        }
+        out.push(cur);
+        return out;
+      }
+
+      function parsePartyCsv(text, filename) {
+        var lines = text.replace(/^\uFEFF/, "").split(/\r?\n/);
+        var meta = { name: filename, concept: "", playstyle: "", file: filename };
+        var headers = null;
+        var members = [];
+        var i;
+        for (i = 0; i < lines.length; i++) {
+          var raw = lines[i];
+          if (!raw || !raw.replace(/\s/g, "")) { continue; }
+          if (raw.charAt(0) === "#") {
+            var body = raw.replace(/^#\s*/, "");
+            var colon = body.indexOf(":");
+            if (colon > 0) {
+              var key = body.slice(0, colon).trim();
+              var val = body.slice(colon + 1).trim();
+              meta[key] = val;
+            }
+            continue;
+          }
+          var cols = parseCsvLine(raw);
+          if (!headers) { headers = cols; continue; }
+          var row = {};
+          var h;
+          for (h = 0; h < headers.length; h++) { row[headers[h]] = cols[h] || ""; }
+          members.push(row);
+        }
+        meta.members = members;
+        return meta;
+      }
+
+      function champImg(key) {
+        return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/champion/" + key + ".png";
+      }
+      function spellImg(id) {
+        return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/spell/" + id + ".png";
+      }
+      function itemImg(id) {
+        return DDRAGON_BASE + "/cdn/" + patchVersion + "/img/item/" + id + ".png";
+      }
+      function runeImg(icon) {
+        return DDRAGON_BASE + "/cdn/img/" + icon;
+      }
+
+      function collectPairs(row, prefix, max, idKey, nameKey) {
+        var list = [];
+        var n;
+        for (n = 1; n <= max; n++) {
+          var id = row[prefix + n + "_" + idKey];
+          var name = row[prefix + n + "_" + nameKey];
+          if (id) { list.push({ id: id, name: name || id }); }
+        }
+        return list;
+      }
+
+      function iconCard(src, name) {
+        return '<div class="icon-card">' +
+          '<img src="' + src + '" alt="' + name + '" width="40" height="40">' +
+          '<div class="n">' + name + "</div></div>";
+      }
+
+      function freeChoiceCard() {
+        return '<div class="icon-card free"><div class="n">自由選択</div></div>';
+      }
+
+      function renderParty(party, nameId, bodyId) {
+        $(nameId).textContent = party.name;
+        var html = "";
+        html += '<span class="label">コンセプト</span><p class="desc">' + party.concept + "</p>";
+        html += '<span class="label">運用</span><p class="play">' + party.playstyle + "</p>";
+        var m;
+        for (m = 0; m < party.members.length; m++) {
+          var row = party.members[m];
+          var items = collectPairs(row, "item", 6, "id", "name");
+          var runes = [];
+          var r;
+          for (r = 1; r <= 6; r++) {
+            if (row["rune" + r + "_icon"]) {
+              runes.push({ icon: row["rune" + r + "_icon"], name: row["rune" + r + "_name"] });
+            }
+          }
+          html += '<article class="member">';
+          html += '<img class="champ-icon" src="' + champImg(row.champion_key) + '" alt="' + row.champion_name + '">';
+          html += "<div>";
+          html += "<h3><span class=\"lane\">" + row.lane + "</span>" + row.champion_name + "</h3>";
+          html += '<span class="label">サモナースペル</span><div class="row">';
+          if (row.spell1_id) { html += iconCard(spellImg(row.spell1_id), row.spell1_name); }
+          if (row.spell2_id) { html += iconCard(spellImg(row.spell2_id), row.spell2_name); }
+          if (!row.spell1_id && !row.spell2_id) { html += freeChoiceCard(); }
+          html += "</div>";
+          html += '<span class="label">購入アイテム</span><div class="row">';
+          var it;
+          if (!items.length) { html += freeChoiceCard(); }
+          for (it = 0; it < items.length; it++) {
+            html += iconCard(itemImg(items[it].id), items[it].name);
+          }
+          html += "</div>";
+          html += '<span class="label">ルーン</span><div class="row">';
+          if (!runes.length) { html += freeChoiceCard(); }
+          for (it = 0; it < runes.length; it++) {
+            html += iconCard(runeImg(runes[it].icon), runes[it].name);
+          }
+          html += "</div></div></article>";
+        }
+        $(bodyId).innerHTML = html;
+      }
+
+      function resetBoards() {
+        $("name1").textContent = "未抽選";
+        $("name2").textContent = "未抽選";
+        $("body1").innerHTML = '<p class="placeholder">抽選待ち</p>';
+        $("body2").innerHTML = '<p class="placeholder">パーティー1のチャンピオン名と重複するコンセプトは抽選対象外です</p>';
+        $("reel").textContent = "READY";
+      }
+
+      function partyChampionNames(party) {
+        return party.members.map(function (m) { return m.champion_name; });
+      }
+
+      function conceptUsesAnyChampionName(party, bannedNames) {
+        var banned = {};
+        var i;
+        for (i = 0; i < bannedNames.length; i++) {
+          banned[bannedNames[i]] = true;
+        }
+        return party.members.some(function (m) { return banned[m.champion_name]; });
+      }
+
+      function eligibleConceptsForParty2(allConcepts, party1) {
+        var bannedNames = partyChampionNames(party1);
+        return allConcepts.filter(function (concept) {
+          if (concept.file === party1.file) { return false; }
+          return !conceptUsesAnyChampionName(concept, bannedNames);
+        });
+      }
+
+      function sleep(ms) {
+        return new Promise(function (resolve) { setTimeout(resolve, ms); });
+      }
+
+      function pick(list) {
+        return list[Math.floor(Math.random() * list.length)];
+      }
+
+      async function spinSelect(list, label) {
+        var ticks = 12;
+        var t;
+        for (t = 0; t < ticks; t++) {
+          $("reel").textContent = pick(list).name;
+          await sleep(8 + t * 5);
+        }
+        var winner = pick(list);
+        $("reel").textContent = winner.name;
+        $("status").textContent = label + "「" + winner.name + "」に決定";
+        return winner;
+      }
+
+      function readyMessage() {
+        var hint = (window.LolEnabledStore && window.LolEnabledStore.saveHint) ? " " + window.LolEnabledStore.saveHint() : "";
+        return "抽選対象 " + parties.length + " / 全 " + partyTotal + " 件。パッチ " + patchVersion + " の画像を使用します。対象の切替はパーティー一覧です。" + hint;
+      }
+
+      function isEnabledValue(raw) {
+        var v = String(raw || "").trim().toLowerCase();
+        return v === "1" || v === "true" || v === "yes" || v === "on" || v === "y";
+      }
+
+      function parseConfigCsv(text) {
+        var lines = text.replace(/^\uFEFF/, "").split(/\r?\n/);
+        var headers = null;
+        var rows = [];
+        var i;
+        for (i = 0; i < lines.length; i++) {
+          var raw = lines[i];
+          if (!raw || !raw.replace(/\s/g, "") || raw.charAt(0) === "#") { continue; }
+          var cols = parseCsvLine(raw);
+          if (!headers) { headers = cols; continue; }
+          var row = {};
+          var h;
+          for (h = 0; h < headers.length; h++) { row[headers[h]] = cols[h] || ""; }
+          if (row.filename) { rows.push(row); }
+        }
+        return rows;
+      }
+
+      function updateButtons() {
+        var canDraw = parties.length >= 2 && !drawing;
+        $("draw1Btn").disabled = !canDraw;
+        $("draw2Btn").disabled = !canDraw || !lockedParty1;
+        $("resetBtn").disabled = drawing;
+        $("draw1Btn").textContent = lockedParty1 ? "パーティー1を引き直す" : "パーティー1を回す";
+        $("draw2Btn").textContent = party2Drawn ? "パーティー2を引き直す" : "パーティー2を回す";
+      }
+
+      function clearParty2() {
+        party2Drawn = false;
+        $("name2").textContent = "未抽選";
+        $("body2").innerHTML = '<p class="placeholder">パーティー1のチャンピオン名と重複するコンセプトは抽選対象外です</p>';
+      }
+
+      async function drawParty1() {
+        if (drawing) { return; }
+        if (parties.length < 2) {
+          $("status").className = "status error";
+          $("status").textContent = "抽選対象が2件未満です。パーティー一覧で「抽選する」を2件以上オンにしてください。";
+          return;
+        }
+        drawing = true;
+        lockedParty1 = null;
+        party2Drawn = false;
+        updateButtons();
+        resetBoards();
+        $("status").className = "status";
+        $("status").textContent = "パーティー1を抽選しています…";
+        var party1 = await spinSelect(parties, "パーティー1");
+        lockedParty1 = party1;
+        renderParty(party1, "name1", "body1");
+        var rest = eligibleConceptsForParty2(parties, party1);
+        drawing = false;
+        updateButtons();
+        if (!rest.length) {
+          $("status").className = "status error";
+          $("status").textContent = "パーティー1のチャンピオン名を含むコンセプトしか残っていません。パーティー1を引き直すか、一覧の抽選対象を見直してください。";
+          $("draw2Btn").disabled = true;
+          return;
+        }
+        $("status").className = "status";
+        $("status").textContent = "パーティー1が決まりました。パーティー2の候補は " + rest.length + " 件です。「パーティー2を回す」で抽選します。";
+      }
+
+      async function drawParty2() {
+        if (drawing || !lockedParty1) { return; }
+        var rest = eligibleConceptsForParty2(parties, lockedParty1);
+        if (!rest.length) {
+          $("status").className = "status error";
+          $("status").textContent = "パーティー1のチャンピオン名を含むコンセプトしか残っていません。パーティー1を引き直すか、一覧の抽選対象を見直してください。";
+          return;
+        }
+        drawing = true;
+        updateButtons();
+        clearParty2();
+        $("status").className = "status";
+        $("status").textContent = "パーティー1のチャンピオン名と重複するコンセプトを除外して、パーティー2を抽選しています…（候補 " + rest.length + " 件）";
+        var party2 = await spinSelect(rest, "パーティー2");
+        party2Drawn = true;
+        renderParty(party2, "name2", "body2");
+        drawing = false;
+        updateButtons();
+      }
+
+      async function loadData() {
+        try {
+          var verRes = await fetch(DDRAGON_BASE + "/api/versions.json");
+          var vers = await verRes.json();
+          if (vers && vers[0]) { patchVersion = vers[0]; }
+        } catch (e) { /* ローカルフォールバックのパッチ番号を使用 */ }
+
+        var configRes = await fetch("parties/config.csv");
+        if (!configRes.ok) { throw new Error("parties/config.csv を読めませんでした"); }
+        var configRows = parseConfigCsv(await configRes.text());
+        if (window.LolEnabledStore) { window.LolEnabledStore.applyToRows(configRows); }
+        if (!configRows.length) { throw new Error("parties/config.csv にパーティーがありません"); }
+
+        partyTotal = configRows.length;
+        var loaded = [];
+        var i;
+        for (i = 0; i < configRows.length; i++) {
+          var filename = configRows[i].filename.trim();
+          var res = await fetch("parties/" + filename);
+          if (!res.ok) { throw new Error(filename + " を読めませんでした"); }
+          var party = parsePartyCsv(await res.text(), filename);
+          if (isEnabledValue(configRows[i].enabled)) { loaded.push(party); }
+        }
+        parties = loaded;
+        $("status").className = "status";
+        $("status").textContent = readyMessage();
+        updateButtons();
+        if (parties.length < 2) {
+          $("status").className = "status error";
+          $("status").textContent = readyMessage() + " 抽選には対象が2件以上必要です。";
+        }
+      }
+
+      $("draw1Btn").addEventListener("click", function () { drawParty1(); });
+      $("draw2Btn").addEventListener("click", function () { drawParty2(); });
+      $("resetBtn").addEventListener("click", function () {
+        if (drawing) { return; }
+        lockedParty1 = null;
+        party2Drawn = false;
+        $("status").className = "status";
+        $("status").textContent = readyMessage();
+        resetBoards();
+        updateButtons();
+      });
+
+      loadData().catch(function (err) {
+        $("status").className = "status error";
+        $("status").textContent = "読み込みに失敗しました。GitHub Pages のサイトを開くか、start.bat でローカルサーバーを起動してください。index.html を直接開いても動きません。(" + err.message + ")";
+        $("draw1Btn").disabled = true;
+        $("draw2Btn").disabled = true;
+      });
+    })();
+  </script>
+</body>
+</html>

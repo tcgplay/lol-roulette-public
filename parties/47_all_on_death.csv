@@ -1,0 +1,9 @@
+# name: 倒れてもまだ動く
+# concept: 自分が倒された瞬間に、まだ攻撃できる、爆発する、卵や破片で戻ってくるチャンピオンです。味方に先にかける蘇生や、キルで伸びるスタックは入れていません。
+# playstyle: 倒される位置を、味方の攻撃範囲かつ敵の真ん中に合わせる。サイオンとカーサスは倒れたあともスキルが続き、コグ＝マウは爆発、アニビアは卵、ザックは破片が残れば戻る。
+lane,champion_key,champion_name,spell1_id,spell1_name,spell2_id,spell2_name,item1_id,item1_name,item2_id,item2_name,item3_id,item3_name,item4_id,item4_name,item5_id,item5_name,item6_id,item6_name,rune1_icon,rune1_name,rune2_icon,rune2_name,rune3_icon,rune3_name,rune4_icon,rune4_name,rune5_icon,rune5_name,rune6_icon,rune6_name
+トップ,Sion,サイオン,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ジャングル,Zac,ザック,SummonerSmite,スマイト,,,,,,,,,,,,,,,,,,,,,,,,,,
+ミッド,Anivia,アニビア,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ボット,KogMaw,コグ＝マウ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+サポート,Karthus,カーサス,,,,,,,,,,,,,,,,,,,,,,,,,,,,
