@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Enable GitHub Pages
 
 on:
   push:
@@ -6,33 +6,48 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  enable:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Assemble app-only publish directory
+      - name: Serve the repo from branch main
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p publish/parties
-          cp index.html party-list.html csv-guide.html license.html LICENSE start.bat start.ps1 enabled-store.js robots.txt publish/
-          cp parties/*.csv publish/parties/
-          touch publish/.nojekyll
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: publish
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          set -euo pipefail
+          API="https://api.github.com/repos/${GITHUB_REPOSITORY}/pages"
+          HDR=(-H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28")
+          SETTINGS="https://github.com/${GITHUB_REPOSITORY}/settings/pages"
+
+          get_code=$(curl -sS -o /tmp/pages-get.json -w "%{http_code}" "${HDR[@]}" "$API")
+          echo "GET /pages -> ${get_code}"
+          cat /tmp/pages-get.json || true
+          echo
+
+          if [ "$get_code" = "200" ]; then
+            put_code=$(curl -sS -o /tmp/pages-put.json -w "%{http_code}" -X PUT "${HDR[@]}" "$API" \
+              -d '{"build_type":"legacy","source":{"branch":"main","path":"/"}}')
+            echo "PUT /pages -> ${put_code}"
+            cat /tmp/pages-put.json || true
+            if [ "$put_code" = "200" ] || [ "$put_code" = "204" ]; then
+              echo "Pages source is main /"
+              exit 0
+            fi
+          else
+            post_code=$(curl -sS -o /tmp/pages-post.json -w "%{http_code}" -X POST "${HDR[@]}" "$API" \
+              -d '{"source":{"branch":"main","path":"/"}}')
+            echo "POST /pages -> ${post_code}"
+            cat /tmp/pages-post.json || true
+            if [ "$post_code" = "201" ] || [ "$post_code" = "409" ]; then
+              echo "Pages site created from main /"
+              exit 0
+            fi
+          fi
+
+          echo "::error::Could not enable GitHub Pages from Actions (token cannot change Pages settings)."
+          echo "::error::Open ${SETTINGS} → Source: Deploy from a branch → Branch: main → Folder: / (root) → Save."
+          echo "::error::The site is https://tcgplay.github.io/lol-roulette-public/"
+          exit 1
