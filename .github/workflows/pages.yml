@@ -47,7 +47,8 @@ jobs:
             fi
           fi
 
-          echo "::error::Could not enable GitHub Pages from Actions (token cannot change Pages settings)."
-          echo "::error::Open ${SETTINGS} → Source: Deploy from a branch → Branch: main → Folder: / (root) → Save."
-          echo "::error::The site is https://tcgplay.github.io/lol-roulette-public/"
-          exit 1
+          echo "::warning::Actions cannot turn on Pages for this repo. Do it once in the GitHub UI."
+          echo "::warning::Open ${SETTINGS}"
+          echo "::warning::Source: Deploy from a branch / Branch: main / Folder: / (root) / Save"
+          echo "::warning::Then wait a minute and open https://tcgplay.github.io/lol-roulette-public/"
+          exit 0
